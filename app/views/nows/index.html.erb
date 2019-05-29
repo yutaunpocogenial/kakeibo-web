@@ -25,32 +25,34 @@
 </div>
 
 
-<div class ="bottom">
-<div class="row">
- <div class="col-sm-6">
- </div>
-  <div class="col-sm-3">
-<h1>収入</h1>
-<br>
-<button type="button" class="btn btn-outline-primary btn-lg">
-<%= link_to '一覧', 'incomes#index'%>
-</button>
-<button type="button" class="btn btn-outline-primary btn-lg">
-<%= link_to '入力', new_income_path %>
-</button>
-  </div>
+ <div class ="bottom">
+  <div class="row">
+   <div class="col-sm-6">
+   </div>
+   <div class="col-sm-3">
+    <h1>収入</h1>
+    <br>
+    <button type="button" class="btn btn-outline-primary btn-lg">
+     <%= link_to '一覧', 'incomes#index'%>
+    </button>
 
- <div class="col-sm-3">
-<h1>支出</h1>
-<br>
-<button type="button" class="btn btn-outline-primary btn-lg">
-<%= link_to '一覧', 'costs#index'%>
-</button>
-<button type="button" class="btn btn-outline-primary btn-lg">
-<%= link_to '入力', new_cost_path %>
-</button>
-</div>
-</div>
+    <button type="button" class="btn btn-outline-primary btn-lg">
+     <%= link_to '入力', new_income_path %>
+    </button>
+   </div>
+
+   <div class="col-sm-3">
+    <h1>支出</h1>
+    <br>
+    <button type="button" class="btn btn-outline-primary btn-lg">
+     <%= link_to '一覧', 'costs#index'%>
+    </button>
+    
+    <button type="button" class="btn btn-outline-primary btn-lg">
+     <%= link_to '入力', new_cost_path %>
+    </button>
+   </div>
+  </div>
 </div>
 
 <footer>

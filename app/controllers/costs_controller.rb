@@ -57,7 +57,7 @@ class CostsController < ApplicationController
   def destroy
     @cost.destroy
     respond_to do |format|
-      format.html { redirect_to costs_url, notice: 'Cost was successfully destroyed.' }
+      format.html { redirect_to costs_url, notice: '支出は削除されました' }
       format.json { head :no_content }
     end
   end

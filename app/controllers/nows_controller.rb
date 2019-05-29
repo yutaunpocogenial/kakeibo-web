@@ -7,7 +7,6 @@ class NowsController < ApplicationController
   # GET /nows.json
   def index
     
-
     @incomes = Income.where(user_id: current_user.id)
     @total_income = @incomes.sum(:income)
 
@@ -20,10 +19,6 @@ class NowsController < ApplicationController
 
     @total =  @total_income - @total_cost
 
-    
-
-
-
   end
 
   # GET /nows/1
@@ -31,13 +26,15 @@ class NowsController < ApplicationController
   def show
   end
 
+  # GET /nows/exp
+  def exp
+  end
+
   # GET /nows/new
   def new
     @now = current_user.build_now
   end
 
-  def all
-  end
 
   # GET /nows/1/edit
   def edit

@@ -1,7 +1,7 @@
 <%= form_with(model: income, local: true) do |form| %>
   <% if income.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(income.errors.count, "error") %> prohibited this income from being saved:</h2>
+      <h2><%= pluralize(income.errors.count, "error") %> この収入は保存できません:</h2>
 
       <ul>
       <% income.errors.full_messages.each do |message| %>
@@ -29,16 +29,16 @@
 
 
   
-<div class="none">
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
-  </div>
-</div>
+ <div class="none">
+   <div class="field">
+     <%= form.label :user_id %>
+     <%= form.text_field :user_id %>
+   </div>
+ </div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
-<% end %>
+ <% end %>
 
-</div>
+  </div>

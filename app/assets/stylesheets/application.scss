@@ -13,18 +13,13 @@
  *= require_self
 */
 
-#one{
-    padding-left: 200px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
 
 .topnav {
     background-color: black;
     overflow: hidden;
   }
   
-  /* Style the links inside the navigation bar */
+  
   .topnav a {
     float: left;
     display: block;
@@ -40,13 +35,19 @@
       color: white;
   }
   
-  /* Change the color of links on hover */
+  
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
 
   
+  #one{
+    padding-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 
 .row{
     text-align: center;

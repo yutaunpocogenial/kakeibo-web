@@ -1,7 +1,7 @@
 <%= form_with(model: cost, local: true) do |form| %>
   <% if cost.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(cost.errors.count, "error") %> prohibited this cost from being saved:</h2>
+      <h2><%= pluralize(cost.errors.count, "error") %> この支出は保存できません:</h2>
 
       <ul>
       <% cost.errors.full_messages.each do |message| %>
@@ -26,15 +26,16 @@
   <%= form.label :"種類" %>
   <%= form.select :costkind, [["食費", "食費"], ["外食費", "外食費"], ["日用品", "日用品"], ["交通費", "交通費"], ["衣服", "衣服"], ["交際費", "交際費"],["趣味", "趣味"],["その他", "その他"]]  %>
 
-<div class="none">
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
-  </div>
+  <div class="none">
+   <div class="field">
+     <%= form.label :user_id %>
+     <%= form.text_field :user_id %>
+    </div>
   </div>
 
   <div class="actions">
    <%= form.submit %>
   </div>
-<% end %>
+  <% end %>
+
   </div>

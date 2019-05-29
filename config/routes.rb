@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  
+  get 'nows/exp' => 'nows#exp'
 
   resources :incomes
   resources :costs
