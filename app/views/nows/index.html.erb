@@ -1,0 +1,62 @@
+<p id="notice"><%= notice %></p>
+
+<h1 id="one">１週間の支出</h1>
+<%= column_chart @costs.group_by_day_of_week(:created_at ,format: "%a").sum(:cost) %>
+
+
+<hr>
+<div class="row">
+  <div class="en col-sm-6">
+    <h1>１週間の支出割合</h1>
+  <% if !@costs.blank?%>
+   <div class="three">
+   <%= pie_chart @a_week_cost_user.group(:costkind).sum(:cost) %>
+   </div>
+  <% else %>
+    <h3 id="two"> "まだデータがありません" </h3>
+   <% end %>
+  </div>
+
+  <div class="sogo col-sm-6">
+  <h1>総合金額</h1>
+   <h2><%= @total %> 円</h2>
+  </div>
+
+</div>
+
+
+<div class ="bottom">
+<div class="row">
+ <div class="col-sm-6">
+ </div>
+  <div class="col-sm-3">
+<h1>収入</h1>
+<br>
+<button type="button" class="btn btn-outline-primary btn-lg">
+<%= link_to '一覧', 'incomes#index'%>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg">
+<%= link_to '入力', new_income_path %>
+</button>
+  </div>
+
+ <div class="col-sm-3">
+<h1>支出</h1>
+<br>
+<button type="button" class="btn btn-outline-primary btn-lg">
+<%= link_to '一覧', 'costs#index'%>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg">
+<%= link_to '入力', new_cost_path %>
+</button>
+</div>
+</div>
+</div>
+
+<footer>
+<h5>Copyright © Yuta Takahashi All Rights Reserved.</h5>
+</footer>
+
+
+
+

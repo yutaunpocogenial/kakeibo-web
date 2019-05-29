@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Now:</strong>
+  <%= @now.now %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @now.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_now_path(@now) %> |
+<%= link_to 'Back', nows_path %>

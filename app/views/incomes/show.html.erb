@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<div class="tablecost">
+<p>
+  <strong>収入名:</strong>
+  <%= @income.name %>
+</p>
+
+<p>
+  <strong>金額:</strong>
+  <%= @income.income %>
+</p>
+
+</div>
+
+<button type="button" class="btn btn-outline-primary btn-lg"><%= link_to '編集', edit_income_path(@income) %> </button>
+<button type="button" class="btn btn-outline-primary btn-lg"><%= link_to '戻る', incomes_path %></button>

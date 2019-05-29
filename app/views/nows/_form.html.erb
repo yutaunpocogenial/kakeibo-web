@@ -1,0 +1,28 @@
+<%= form_with(model: now, local: true) do |form| %>
+  <% if now.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(now.errors.count, "error") %> prohibited this now from being saved:</h2>
+
+      <ul>
+      <% now.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :now %>
+    <%= form.text_field :now %>
+  </div>
+
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

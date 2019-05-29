@@ -1,0 +1,12 @@
+<h1 id="cost">収入編集</h1>
+
+<%= render 'form', income: @income %>
+
+
+<button type="button" class="btn btn-outline-primary btn-lg">
+<%= link_to '詳細', @income %> 
+</button>
+
+<button type="button" class="btn btn-outline-primary btn-lg">
+<%= link_to '戻る', incomes_path %>
+</button>
