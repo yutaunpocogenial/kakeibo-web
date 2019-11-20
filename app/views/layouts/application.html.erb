@@ -17,7 +17,7 @@
 
   <% if user_signed_in? %>
   <a href="/">ホーム：<%= current_user.email%></a>
-  <a href="nows/exp">説明書</a>
+　 <%=  link_to '説明書' , nows_exp_path, :method => :get %>
   <%= link_to 'ユーザー情報編集・退会', edit_user_registration_path, :method => :get %>
   <%= link_to 'ログアウト', destroy_user_session_path, :method => :delete %>
   <% else %>

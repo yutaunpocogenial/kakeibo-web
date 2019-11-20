@@ -1,3 +1,5 @@
+
+
 <%= form_with(model: cost, local: true) do |form| %>
   <% if cost.errors.any? %>
     <div id="error_explanation">
@@ -15,15 +17,18 @@
 
   <div class="field">
     <%= form.label :支出名 %>
+    <br>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
     <%= form.label :金額 %>
+    <br>
     <%= form.text_field :cost %>
   </div>
 
   <%= form.label :"種類" %>
+  <br>
   <%= form.select :costkind, [["食費", "食費"], ["外食費", "外食費"], ["日用品", "日用品"], ["交通費", "交通費"], ["衣服", "衣服"], ["交際費", "交際費"],["趣味", "趣味"],["その他", "その他"]]  %>
 
   <div class="none">
@@ -33,8 +38,10 @@
     </div>
   </div>
 
+<div class="but">
   <div class="actions">
    <%= form.submit %>
+  </div>
   </div>
   <% end %>
 

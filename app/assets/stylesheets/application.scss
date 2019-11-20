@@ -18,8 +18,8 @@
     background-color: black;
     overflow: hidden;
   }
-  
-  
+
+
   .topnav a {
     float: left;
     display: block;
@@ -34,14 +34,14 @@
   .topnav a h5{
       color: white;
   }
-  
-  
+
+
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
 
-  
+
   #one{
     padding-left: 200px;
     margin-top: 10px;
@@ -93,7 +93,7 @@ footer h5{
 .tablecost{
     font-size: 20px;
 }
- 
+
 .none{
     display:none;
 }
@@ -104,4 +104,8 @@ footer h5{
 
 .three{
     padding-top: 50px;
+}
+
+.but{
+    margin-top: 30px;
 }

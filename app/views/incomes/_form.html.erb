@@ -15,15 +15,20 @@
 
   <div class="field">
     <%= form.label :収入名 %>
+    <br>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
     <%= form.label :金額 %>
+    <br>
     <%= form.text_field :income %>
   </div>
 
+   <br>
+
   <%= form.label :"種類" %>
+  <br>
   <%= form.select :incomekind, [["給料", "給料"], ["その他", "その他"]]  %>
 
 
@@ -36,9 +41,14 @@
    </div>
  </div>
 
+ <br>
+
+ <div class="but">
   <div class="actions">
     <%= form.submit %>
   </div>
+  </div>
  <% end %>
 
-  </div>
+
+</div>
